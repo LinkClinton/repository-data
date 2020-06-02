@@ -1,0 +1,30 @@
+Scale -1 1 1
+Film "image" 
+        "integer xresolution" [ 1500 ] 
+        "integer yresolution" [ 833 ] 
+        "string filename" [ "tt.exr" ] 
+LookAt -2 2 2
+        1.79999995 -0.150000006 0.649999976
+        0 0 1
+Camera "perspective" 
+        "float fov" [ 30 ] 
+
+Sampler "random" "integer pixelsamples" 16
+#Integrator "bdpt"
+Integrator "path"
+
+#############################################
+
+WorldBegin
+
+AttributeBegin
+Rotate 120 0 1 0  #320 also good?
+    LightSource "infinite" 
+            "string mapname" [ "textures/glacier_latlong.hdr" ] 
+AttributeEnd
+
+Include "materials.pbrt"
+
+Include "geometry.pbrt"
+
+WorldEnd
