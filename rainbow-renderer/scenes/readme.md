@@ -6,6 +6,8 @@ For more detail of them, you can see [here](https://github.com/LinkClinton/meta-
 
 ## Gallery
 
+Most scenes are rendered with 1024 samples and path tracing.
+
 ![cbox](./../gallery/cbox.png)
 
 ![mi](./../gallery/mi.png)
