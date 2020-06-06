@@ -1,0 +1,75 @@
+Integrator "path" "integer maxdepth" [4]
+
+Sampler "random" "integer pixelsamples" [64]
+
+PixelFilter "gaussian"
+
+Film "image" "integer xresolution" [512] "integer yresolution" [512]
+    "string filename" "cbox-sss.png"
+
+Scale -1 1 1
+LookAt 278, 273, -800 278, 273, -799 0, 1, 0
+Camera "perspective" "float fov" [39.3077]
+
+WorldBegin
+
+MakeNamedMaterial "box"
+    "string type" ["matte"]
+    "spectrum Kd" "spds/box.spd"
+
+MakeNamedMaterial "white"
+    "string type" ["matte"]
+    "spectrum Kd" "spds/white.spd"
+
+MakeNamedMaterial "red"
+    "string type" ["matte"]
+    "spectrum Kd" "spds/red.spd"
+
+MakeNamedMaterial "green"
+    "string type" ["matte"]
+    "spectrum Kd" "spds/green.spd"
+
+MakeNamedMaterial "light"
+    "string type" ["matte"]
+    "spectrum Kd" "spds/light.spd"
+
+AttributeBegin
+Translate 0 -0.5 0
+NamedMaterial "light"
+AreaLightSource "diffuse" "spectrum L" "spds/radiance.spd"
+#Shape "objmesh" "string filename" ["meshes/cbox_luminaire.obj"]
+
+Include "meshes/cbox_luminaire.pbrt"
+
+AttributeEnd
+
+AttributeBegin
+NamedMaterial "white"
+#Shape "objmesh" "string filename" ["meshes/cbox_floor.obj"]
+#Shape "objmesh" "string filename" ["meshes/cbox_ceiling.obj"]
+#Shape "plymesh" "string filename" ["meshes/cbox_back.ply"]
+
+Include "meshes/cbox_floor.pbrt"
+Include "meshes/cbox_ceiling.pbrt"
+Include "meshes/cbox_back.pbrt"
+
+NamedMaterial "green"
+#Shape "objmesh" "string filename" ["meshes/cbox_greenwall.obj"]
+
+Include "meshes/cbox_greenwall.pbrt"
+
+NamedMaterial "red"
+#Shape "objmesh" "string filename" ["meshes/cbox_redwall.obj"]
+
+Include "meshes/cbox_redwall.pbrt"
+
+Material "kdsubsurface" "rgb Kd" [0.81 0.81 0.69] "float mfp" [10]
+#Shape "objmesh" "string filename" ["meshes/cbox_smallbox.obj"]
+#Shape "objmesh" "string filename" ["meshes/cbox_largebox.obj"]
+
+Include "meshes/cbox_smallbox.pbrt"
+Include "meshes/cbox_largebox.pbrt"
+
+AttributeEnd
+
+WorldEnd

@@ -10,6 +10,8 @@ Most scenes are rendered with 1024 samples and path tracing.
 
 ![cbox](./../gallery/cbox.png)
 
+![cbox-sss](./../gallery/cbox-sss.png)
+
 ![mi](./../gallery/mi.png)
 
 ![f8-10](./../gallery/f8-10.png)
@@ -21,6 +23,8 @@ Most scenes are rendered with 1024 samples and path tracing.
 ![arcsphere](./../gallery/arcsphere.png)
 
 ![microcity](./../gallery/microcity.png)
+
+![ballpile](./../gallery/ballpile.png)
 
 ![yeahright](./../gallery/yeahright.png)
 
@@ -43,3 +47,9 @@ Most scenes are rendered with 1024 samples and path tracing.
 ![bmw-m6](./../gallery/bmw-m6.png)
 
 ![vw-van](./../gallery/vw-van.png)
+
+![sssdragon-mfp-0.01](./../gallery/sssdragon-mfp-0.01.png)
+
+![sssdragon-mfp-0.1](./../gallery/sssdragon-mfp-0.25.png)
+
+![head](./../gallery/head.png)
