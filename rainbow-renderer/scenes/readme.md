@@ -56,6 +56,8 @@ Most scenes are rendered with 1024 samples and path tracing.
 
 ![cloud](./../gallery/cloud.png)
 
+![smoke](./../gallery/smoke.png)
+
 ![coffee-splash](./../gallery/splash.png)
 
 ![dambreak](./../gallery/dambreak0.png)
