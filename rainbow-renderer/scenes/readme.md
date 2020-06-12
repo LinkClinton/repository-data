@@ -53,3 +53,13 @@ Most scenes are rendered with 1024 samples and path tracing.
 ![sssdragon-mfp-0.1](./../gallery/sssdragon-mfp-0.25.png)
 
 ![head](./../gallery/head.png)
+
+![cloud](./../gallery/cloud.png)
+
+![coffee-splash](./../gallery/splash.png)
+
+![dambreak](./../gallery/dambreak0.png)
+
+![dragon](./../gallery/f11-14.png)
+
+![smoke-plume](./../gallery/plume-084.png)
