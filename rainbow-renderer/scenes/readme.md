@@ -12,7 +12,15 @@ Most scenes are rendered with 1024 samples and path tracing.
 
 ![cbox-sss](./../gallery/cbox-sss.png)
 
+![cbox-water](./../gallery/water-caustic.png)
+
+![cbox-volume](./../gallery/volumetric-caustic.png)
+
 ![mi](./../gallery/mi.png)
+
+![bidir](./../gallery/veach-bidir.png)
+
+![bunny](./../gallery/bunny-fur.png)
 
 ![f8-10](./../gallery/f8-10.png)
 
@@ -35,6 +43,12 @@ Most scenes are rendered with 1024 samples and path tracing.
 ![chopper-titan](./../gallery/chopper-titan.png)
 
 ![tt](./../gallery/tt.png)
+
+![measure-one](./../gallery/frame380.png)
+
+![living-room-3](./../gallery/living-room.png)
+
+![kitchen](./../gallery/kitchen.png)
 
 ![bathroom](./../gallery/bathroom.png)
 

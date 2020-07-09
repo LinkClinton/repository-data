@@ -12,7 +12,7 @@ Film "image"
 
 Sampler "random" 
         "integer pixelsamples" [ 16 ] 
-Integrator "volpath" 
+Integrator "bdpt" 
         "integer maxdepth" [ 30 ] 
 
 
